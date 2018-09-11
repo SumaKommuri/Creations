@@ -12,6 +12,9 @@ export class LabelComponent implements OnInit {
   condition: boolean
   @Input()
   message: string
+  x=10
+  y=20
+
 
 
   ngOnInit() {

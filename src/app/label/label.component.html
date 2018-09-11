@@ -1,4 +1,7 @@
 <p>
-  {{message}}<span *ngIf="condition">*</span><br>
-  label works!
+  {{message}}<span *ngIf="condition">*</span>
+  First num: <input type="number" [(ngModel)]="x" >
+  Second num: <input type="number" [(ngModel)]="y" >
+  The sum is:{{x+y}}
+  <!--label works!-->
 </p>
