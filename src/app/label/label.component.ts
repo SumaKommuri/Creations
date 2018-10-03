@@ -5,20 +5,24 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './label.component.html',
   styleUrls: ['./label.component.css']
 })
-export class LabelComponent implements OnInit {
+
+export class LabelComponent  {
 
   constructor() { }
-  @Input()
+  /*@Input()
   condition: boolean
   @Input()
   message: string
 
   x=10
-  y=20
+  y=20*/
 
+  @Input()
+  required: boolean
+  @Input()
+  propertyName: string
+  @Input()
+  question: boolean
 
-
-  ngOnInit() {
-  }
 
 }

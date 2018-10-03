@@ -1,38 +1,40 @@
 <!--<p>
   signup works!
 </p>-->
-<div class="container-fluid">
+<div class="container-fluid bg-light pb-5 pt-4">
   <form>
     <div class="row">
       <div class="form-group col-md-4">
-        <label>First name:*</label>
+        <app-label [propertyName]="'First name'" [required]="true" [question]="true"></app-label>
         <input type="text" class="form-control" placeholder="First name">
       </div>
       <div class="form-group col-md-4">
-        <label>Middle name:</label>
+        <app-label [propertyName]="'Middle name'"></app-label>
         <input type="text" class="form-control" placeholder="Middle name">
       </div>
       <div class="form-group col-md-4">
-        <label>Last name:</label>
+        <app-label [propertyName]="'Last name'" [required]="true"></app-label>
         <input type="text" class="form-control" placeholder="Last name">
       </div>
     </div>
     <div class="row">
       <div class="form-group col-md-4">
-        <label>Email address:</label>
+        <app-label [propertyName]="'E-mail'" [required]="false"></app-label>
         <input type="text" class="form-control" >
       </div>
       <div class="form-group col-md-4">
-        <label>DOB:</label>
+        <app-label [propertyName]="'DOB'" [required]="false"></app-label>
         <input type="number" class="form-control" placeholder="dd-mm-yyyy">
       </div>
       <div class="form-group col-md-4">
-        <label>Contact #:</label>
+        <app-label [propertyName]="'Contact#'" [required]="true"></app-label>
         <input type="number" class="form-control" >
       </div>
     </div>
-    <input type="submit" value="Submit">
-    <input type="reset">
+    <button class="btn btn-sm btn-primary float-right m-2" >Submit</button>
+    <button class="btn btn-sm btn-secondary float-right m-2" >Reset</button>
+    <!--<input type="submit" value="Submit">
+    <input type="reset">-->
   </form>
 </div>
 

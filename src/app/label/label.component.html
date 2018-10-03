@@ -1,7 +1,11 @@
-<p>
+<!--<p>
   {{message}}<span *ngIf="condition">*</span>
   First num: <input type="number" [(ngModel)]="x" >
   Second num: <input type="number" [(ngModel)]="y" >
   The sum is:{{x+y}}
-  <!--label works!-->
-</p>
+  &lt;!&ndash;label works!&ndash;&gt;
+</p>-->
+<label>
+  {{propertyName}} <sup *ngIf="required" class="text-danger fs-8"><i class="fas fa-asterisk "></i>
+  <span *ngIf="question" class="text-warning fs-8 ml-1"><i class="fas fa-question-circle"></i> </span></sup>
+</label>
