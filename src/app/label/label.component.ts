@@ -23,6 +23,8 @@ export class LabelComponent  {
   propertyName: string
   @Input()
   question: boolean
+  @Input()
+  modal: string
 
 
 }
