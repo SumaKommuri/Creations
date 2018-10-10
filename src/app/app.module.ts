@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { TabelComponent } from './tabel/tabel.component';
 import { CalculationComponent } from './calculation/calculation.component';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
 
 const appRoutes: Routes = [
 { path: 'home', component: HomeComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     SignupComponent,
     HomeComponent,
     TabelComponent,
-    CalculationComponent
+    CalculationComponent,
+    MultiplicationComponent
   ],
   imports: [
     BrowserModule,
