@@ -2,40 +2,40 @@
   signup works!
 </p>-->
 <div class="container-fluid bg-light pb-5 pt-4">
-  <form>
+  <!--<form>-->
     <div class="row">
       <div class="form-group col-md-4">
         <app-label [propertyName]="'First name'" [required]="true" [question]="true" [modal]="'FirstName'"><app-tabel></app-tabel></app-label>
-        <input type="text" class="form-control" placeholder="First name">
+        <input type="text" class="form-control" placeholder="First name" [(ngModel)]="firstName">
       </div>
       <div class="form-group col-md-4">
         <app-label [propertyName]="'Middle name'"></app-label>
-        <input type="text" class="form-control" placeholder="Middle name">
+        <input type="text" class="form-control" placeholder="Middle name" [(ngModel)]="middleName">
       </div>
       <div class="form-group col-md-4">
         <app-label [propertyName]="'Last name'" [required]="true" [question]="true" modal="LastName">This is Last name</app-label>
-        <input type="text" class="form-control" placeholder="Last name">
+        <input type="text" class="form-control" placeholder="Last name" [(ngModel)]="lastName">
       </div>
     </div>
     <div class="row">
       <div class="form-group col-md-4">
         <app-label [propertyName]="'E-mail'" [required]="false"></app-label>
-        <input type="text" class="form-control" >
+        <input type="text" class="form-control" [(ngModel)]="email" >
       </div>
       <div class="form-group col-md-4">
         <app-label [propertyName]="'DOB'" [required]="false"></app-label>
-        <input type="number" class="form-control" placeholder="dd-mm-yyyy">
+        <input type="number" class="form-control" placeholder="dd-mm-yyyy" [(ngModel)]="dob">
       </div>
       <div class="form-group col-md-4">
         <app-label [propertyName]="'Contact#'" [required]="true"></app-label>
-        <input type="number" class="form-control" >
+        <input type="number" class="form-control" [(ngModel)]="contact" >
       </div>
     </div>
-    <button class="btn btn-sm btn-primary float-right m-2" >Submit</button>
+    <button class="btn btn-sm btn-primary float-right m-2" (click)="submit()">Submit</button>
     <button class="btn btn-sm btn-secondary float-right m-2" >Reset</button>
     <!--<input type="submit" value="Submit">
     <input type="reset">-->
-  </form>
+  <!--</form>-->
 </div>
 
 

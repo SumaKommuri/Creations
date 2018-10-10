@@ -1,0 +1,23 @@
+<div class="container-fluid bg-light pb-5 pt-4">
+  <div class="form-inline">
+
+      <input type="number" class="form-control form-control-sm m-1" placeholder="Enter a number" min="0" [(ngModel)]="num1">
+
+
+      <select class="form-control form-control-sm m-1" [(ngModel)]="option" >
+        <option value="divide"  >/</option>
+        <option value="multiply">*</option>
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+      </select>
+
+
+      <input type="number" class="form-control form-control-sm m-1" placeholder="Enter a number" min="0" [(ngModel)]="num2">
+
+    <button class="btn btn-sm btn-secondary  m-2" [disabled]="num1==null||num2==null||option==null" (click)="calculate()" >=</button>
+
+      <input type="number" class="form-control form-control-sm m-1 " disabled  [(ngModel)]="result">
+
+    <button class="btn btn-sm btn-secondary float-right m-2" (click)="onReset()">Reset</button>
+  </div>
+</div>

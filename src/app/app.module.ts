@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { TabelComponent } from './tabel/tabel.component';
+import { CalculationComponent } from './calculation/calculation.component';
 
 const appRoutes: Routes = [
 { path: 'home', component: HomeComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     SignupComponent,
     HomeComponent,
-    TabelComponent
+    TabelComponent,
+    CalculationComponent
   ],
   imports: [
     BrowserModule,
