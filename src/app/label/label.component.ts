@@ -26,5 +26,4 @@ export class LabelComponent  {
   @Input()
   modal: string
 
-
 }

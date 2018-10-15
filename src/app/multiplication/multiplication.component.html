@@ -11,6 +11,6 @@
   <option value="9">9</option>
   <option value="10">10</option>
 </select>
-<div *ngFor="let i of multiplication">
+<div *ngFor="let i of multiplication;  let ind = index"  [ngClass]="option*(ind+1)%5==0 ?'text-danger':'text-success'">
   {{i}}
 </div>
